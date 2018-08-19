@@ -1,0 +1,56 @@
+
+
+/*Table 1*/
+
+#table_1{
+    position: relative;
+    left: 1200px;
+} 
+
+#table_1,#table_1 tr,#table_1 td{
+    background-color: #4dffdb;
+    border: solid 1px black;
+    border-collapse: collapse;
+
+}
+
+#table_1 td{
+    height: 5px;
+    width: 5px;
+}
+
+
+ 
+/*Table 2*/
+
+
+#table_2{
+    background-color: gray;
+    
+    border: solid 1px orange;
+    
+    position: relative;
+    top: 140px;
+    left:620px;
+}
+
+#table_2 td {
+    border-top: dotted 1px red;
+}
+
+#table_2 #first_entry{
+    border: none;
+}
+
+
+/*Table 3*/
+
+#table_3 img{
+    height: 50px;
+    width: 50px;
+    
+    position: relative;
+    top: 80px;
+}
+
+
