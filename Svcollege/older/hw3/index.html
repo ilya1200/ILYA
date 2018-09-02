@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <![endif]-->
+
+        <title>Fine Restaurant</title>
+        <link rel="shortcut icon"  href="images/logo.ico"><!--BUG: ICON DOESNT DISPLAY ON EDGE ONLY plugin doesnt help,other browsers-OK-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+
+        <div id="parent" class="group">
+            <div id="container">
+                        <header>
+                            <h1>Menu</h1>
+                        </header>
+
+                        <div id="sub_container">
+                            <table>
+                                <tr>
+                                    <th>Dish</th>
+<!--                                    <th>Description</th>-->
+                                    <th>Price</th>
+                                </tr>
+                                <tr> <!--Dish 1-->
+                                    <td>Salad</td>
+<!--                                    <td><img src="" alt="Salad"></td>-->
+                                    <td>10$</td>
+                                </tr>
+
+                                <tr> <!--Dish 2-->
+                                    <td>French Fries</td>
+<!--                                    <td><img alt="French Fries"></td>-->
+                                    <td>15$</td>
+                                </tr>
+
+                                <tr> <!--Dish 3-->
+                                    <td>Fried Potatoes</td>
+<!--                                    <td><img alt="Fried Potatoes"></td>-->
+                                    <td>15$</td>
+                                </tr>
+
+                                <tr> <!--Dish 4-->
+                                    <td>Onion Rings</td>
+<!--                                    <td><img alt="Onion Rings"></td>-->
+                                    <td>15$</td>
+                                </tr>
+
+                                <tr> <!--Dish 5-->
+                                    <td>Hamburger</td>
+<!--                                    <td><img alt="Hamburger"></td>-->
+                                    <td>20$</td>
+                                </tr>
+
+                                <tr> <!--Dish 6-->
+                                    <td>CheeseBurger</td>
+<!--                                    <td><img alt="CheeseBurger"></td>-->
+                                    <td>20$</td>
+                                </tr>
+
+                                <tr> <!--Dish 7-->
+                                    <td>Ribs</td>
+<!--                                    <td><img alt="Ribs"></td>-->
+                                    <td>20$</td>
+                                </tr>
+
+                                <tr> <!--Dish 8-->
+                                    <td>Fish</td>
+<!--                                    <td><img alt="Fish"></td>-->
+                                    <td>25$</td>
+                                </tr>
+
+                                <tr> <!--Dish 9-->
+                                    <td>Beer</td>
+<!--                                    <td><img alt="Beer"></td>-->
+                                    <td>10$</td>
+                                </tr>
+
+
+                                <tr> <!--Dish 10-->
+                                    <td>Icecream</td>
+<!--                                    <td><img alt="Icecream"></td>-->
+                                    <td>5$</td>
+                                </tr>
+                            </table>
+                        </div><!--END sub_container-->
+
+                        <br><br><br>
+
+                        <form>
+                            <fieldset>
+                                    <legend>Order Details:</legend>
+                                    <select>
+                                            <option>Choose a Dish</option><!--Default-->
+                                            <option>Salad</option><!--Dish 1-->
+                                            <option>French Fries</option><!--Dish 2-->
+                                            <option>Fried Potatoes</option><!--Dish 3-->
+                                            <option>Onion Rings</option><!--Dish 4-->
+                                            <option>Hamburger</option><!--Dish 5-->
+                                            <option>CheeseBurger</option><!--Dish 6-->
+                                            <option>Ribs</option><!--Dish 7-->
+                                            <option>Fish</option><!--Dish 8-->
+                                            <option>Beer</option><!--Dish 9-->
+                                            <option>Icecream</option><!--Dish 10-->
+                                    </select>
+                                        <br><br>
+
+                                        <label>Tip </label><input type="text" placeholder="For Tip">
+                                        <br><br>
+
+                                        <button type="button">
+                                                Order Now
+                                        </button>
+
+
+
+                            </fieldset>
+                        </form>
+
+
+            </div><!--END container-->
+
+    <!--  BUG  BUG  ON HOVERIN a dish an appropriate image should be displayed on the side-->  
+            <div id="disply">
+                <img  src="images/food/beer.jpg">
+            </div>
+            
+
+      </div><!--END PARENT_DIV-->
+        <br><br>
+
+
+        <footer>
+            <a href="home.html">For more...</a>
+        </footer>
+    </body>
+</html>
