@@ -234,6 +234,11 @@ input[type="checkbox"]{
     background-image: url(https://q-ec.bstatic.com/xdata/images/city/540x270/350009.jpg?k=2cbfa5b361244fade54d605a484220b702003f535ae93746d44f148047eec87c&o=);
 }
 
+.post-card_content#newYork{
+    background-image: url(https://r-ec.bstatic.com/xdata/images/city/540x270/349569.jpg?k=ba9c5db22f7e6c05dbfa4378bc7629207ac86f6993d3e50cd4780a2871d497be&amp;o=);
+}
+
+
 .post-card_overlay{
     width: 100%;
     height: 40%;
@@ -274,9 +279,9 @@ input[type="checkbox"]{
     font-weight: 500;
     padding: 0 4px;
     vertical-align: middle;
-    position: fixed;
-    bottom: 30px;
-    left: 190px;
+    position: relative;
+    left: 63%;
+    top: 110px;
     padding: 4px;
     font-size: 15px;
 }
