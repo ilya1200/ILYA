@@ -1,0 +1,65 @@
+body{
+    box-sizing: border-box;
+    animation: backColor 4s  infinite alternate ;
+}
+
+.flexContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexItem{
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 190px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+
+
+.die{
+    width: 200px;
+    height: 200px;
+}
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@keyframes backColor {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+@keyframes backColor2 {
+    0%   {background-color: #0c2427;}
+    25%  {background-color:  #1f5a60;}
+    50%  {background-color: #78cad3;}
+    100% {background-color: #9fd9e0;}
+}
+
+
+@media all and (min-width:450px),
+     all and (orientation: landscape){
+    .flexContainer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    body{
+        animation-name: backColor2;
+        animation-duration: 8s;
+    }
+}
+
