@@ -1,0 +1,31 @@
+*{ /*TEST*/
+    list-style: none;
+}
+
+body{
+    max-width: 700px;
+}
+
+li{
+    margin: 20px;
+    border: 1px solid tomato;
+}
+
+div{
+    min-height: 10px;
+}
+
+#out1{
+    background-color: red;
+    width: 0px;
+}
+
+#out2{
+    background-color: blue;
+    width: 0px;
+}
+
+#out3{
+    background-color: green;
+    width: 0px;
+}
