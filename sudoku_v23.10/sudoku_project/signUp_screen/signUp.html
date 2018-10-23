@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign-Up Screen</title>
+    <link rel="stylesheet" type="text/css" href="signUp.css">
+</head>
+    <body>
+        <header>
+            <h1>Sign Up</h1>
+        </header>
+        <form id="form" action="signUp" method="POST">
+
+            <fieldset>
+                <legend>Sign-Up</legend>
+    
+                <fieldset>
+                    <legend><span class="numbers">1</span> Basic Info</legend>
+
+                    <ul class="row row1">
+                        <li>
+                            <label for="firstName">First Name:</label>
+                            <input id="firstName" name="user_firstName" type="text">
+                            <small></small>
+                        </li>     
+                        <li>
+                            <label for="lastName">Last Name:</label>
+                            <input id="lastName" name="user_lastName" type="text">
+                            <small></small>
+                        </li>
+
+                    </ul>
+                </fieldset>
+
+                
+                <fieldset>
+                    <legend><span class="numbers">2</span> Profile</legend>
+                            
+                    <ul class="row row2">
+                        <li>
+                            <label for="userName">User Name:</label>
+                            <input id="userName" name="userName" type="text">
+                            <small></small>
+                        </li>
+                        <li>
+                            <label for="userPassword">Password:</label>
+                            <input id="userPassword" name="userPassword" type="password">
+                            <small></small>
+                        </li>
+
+                        <li>
+                            <label for="repeatPassword">Repeat Password:</label>
+                            <input id="repeatPassword" name="repeatPassword" type="password">
+                            <small></small>
+                        </li>
+                        
+                    </ul>   
+                </fieldset> 
+                
+                <div class="row row3">
+                    <button type="button" id="createBtn" disabled>Create</button>
+                </div>
+
+                <footer>
+                        <small>*The form must be valid &amp; complete to sign up</small> 
+                </footer>
+            </fieldset>
+
+        </form>
+        <!-- User-Server Connection
+            <script src="../Global_Util/Servers/userServer.js"></script>
+        -->
+        
+        <script src="signUp.js"></script>
+    </body>
+</html>

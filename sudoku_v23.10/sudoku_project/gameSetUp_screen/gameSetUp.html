@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Set-Up</title>
+    <link rel="stylesheet" type="text/css" href="gameSetUp.css">
+</head>
+    <body>
+        <header>
+            <h1>Welcome <span id="userName"></span></h1>
+        </header>
+
+        <div>
+            <h2> Create a game</h2>
+
+            <form action="gameSetUp.html" method="POST">
+                <fieldset>
+                    <legend>Choose a level</legend>
+
+                    <label for="easy">Easy</label>
+                    <input id="easy" name="game_lvl" type="radio">
+
+                    <label for="medium">Medium</label>
+                    <input id="medium" name="game_lvl" type="radio">
+
+                    <label for="hard">Hard</label>
+                    <input id="hard" name="game_lvl" type="radio">
+
+                    <a id="startBtn" href="#">
+                     <button type="button">Start</button>
+                    </a>
+                </fieldset>
+            </form>
+
+        </div>
+
+
+
+        <script src="gameSetUp.js"></script>
+    </body>
+</html>

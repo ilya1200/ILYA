@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Screen</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+    <body>
+        <header>
+            <h1>Log in</h1>
+        </header>
+        <form action="login.html" method="POST">
+            <fieldset>
+                <legend><span>Log-in</span></legend>
+                <div class="row row1">
+                    <label for="userName">User:</label>
+                    <input id="userName" name="user_name" type="text">
+
+                    <label for="userPassword">Password:</label>
+                    <input id="userPassword" name="user_password" type="password">
+
+                    <a href="mailto:email@gmail.com?subject=Your%20password">Forgot the password</a>
+                </div>
+
+                <div class="row row2">
+                        <button type="button" id="signUpBtn">Sign-Up</button>
+                        <button type="button" id="connectBtn">Connect</button>
+                </div>
+            </fieldset>
+
+        </form>
+
+        <!--  User-Server Connection --> 
+        <script src="../Global_Util/Servers/userServer.js"></script>
+         
+
+        <script src="login.js"></script>
+    </body>
+</html>
