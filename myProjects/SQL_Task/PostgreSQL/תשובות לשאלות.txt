@@ -1,0 +1,14 @@
+קובץ המתאר את שמות השאילתות לכל סעיף
+==================================
+
+שאלה א - question_a
+שאלה ב - question_b
+שאלה ג -  question_c 
+
+שאלה ד1  - question_d1 
+שאלה ד2  - question_d2
+שאלה ד3  - question_d3
+שאלה ד4  - question_d4
+שאלה ד5  - question_d5
+שאלה ד6  - question_d6
+שאלה ד7  - question_d7
