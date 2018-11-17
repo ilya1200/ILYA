@@ -1,0 +1,136 @@
+<div class="container">
+  <div class="row p-3 mb-2 bg-primary text-white text-center" *ngIf="htmlPage===1 || htmlPage===0" >
+    <div class="col">
+      <div class="jumbotron bg-info ">
+        <h1 class="display-4">Welcome</h1>
+
+        <hr class="my-4">
+        <div class="btn-group-vertical w-75">
+          <div class="mx-auto">{{vote}}</div>
+          <button type="button" class="btn btn-primary btn-lg btn-block mt-2 border border-white " (click)="myVote()">Vote</button>
+          <button id="next-btn-pg1" type="button" class="btn btn-secondary btn-lg btn-block mt-3 border border-white " (click)="pg1Next()">Next</button>
+        </div>
+      </div>
+
+
+
+    </div><!-- /col -->
+
+  </div><!-- /row --> 
+
+  
+  <div class="row" *ngIf="htmlPage===2 || htmlPage===0">
+    <div class="col">
+        <div class="card text-center">
+            <div class="card-header">
+              <h1 class="display-4 text-muted">Create 9 Members</h1>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label class="lead" for="exampleInputName2">Name</label>
+                  <input [(ngModel)]="memberName" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="exampleInputName2"  placeholder="Enter a member's name">
+                </div>
+
+                <div class="form-group">
+                  <label  class="lead" for="exampleInputId2">ID</label>
+                  <input [(ngModel)]="memberId" [ngModelOptions]="{standalone: true}" type="number" class="form-control" id="exampleInputId2" min="100000" max="999999" placeholder="ID of a member">
+                </div>
+
+                <button type="button" (click)="createMember()" class="btn btn-primary btn-lg">Next</button>
+              </form>
+              
+            </div>
+
+          </div>
+    </div><!-- /col -->
+  </div><!-- /row --> 
+
+
+  <div class="row" *ngIf="htmlPage===3 || htmlPage===0">
+    <div class="col">
+        <div class="card text-center">
+            <div class="card-header">
+              <h1 class="display-4 text-muted">Create 3 Parties</h1>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label class="lead" for="exampleInputPartyID3">Party ID</label>
+                  <input  [(ngModel)]="partyId" [ngModelOptions]="{standalone: true}" type="number" class="form-control" id="exampleInputPartyID3" min="1000" max="9999" placeholder="Enter the party ID">
+                </div>
+                <div class="form-group">
+                  <label class="lead" for="exampleInputManagerId3">Id of Manager</label>
+                  <input [(ngModel)]="partyManagerId" [ngModelOptions]="{standalone: true}" type="number" class="form-control" id="exampleInputManagerId3" min="100000" max="999999" placeholder="ID of the Party Manager">
+                </div>
+                <button (click)="createParty()"  type="button" class="btn btn-primary btn-lg">Next</button>
+              </form>
+            </div>
+          </div>
+    </div><!-- /col -->
+  </div><!-- /row --> 
+
+  <div class="row" *ngIf="htmlPage===4 || htmlPage===0">
+    <div class="col">
+        <div class="card text-center">
+            <div class="card-header">
+              <h1 class="text-left text-md-center display-3 text-muted">The Government</h1>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">PartyId</th>
+                        <th scope="col">managerId</th>
+                        <th scope="col">managerName</th>
+                        <th scope="col">memberId</th>
+                        <th scope="col">memberName</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!--*ngFor="let htmlString of htmlPrintArr"-->
+                      <!--{{htmlString}}-->  
+                      <!--{{htmlPrint}}-->
+
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                        <td>[data]</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+            <div class="card-footer text-muted">
+              <button (click)="pg4Return()" type="button" class="btn btn-primary btn-block btn-lg">Return</button>
+            </div>
+          </div>
+    </div><!-- /col -->
+  </div><!-- /row --> 
+
+
+
+</div><!-- /container --> 
+
+
+              
+
+
+
+
