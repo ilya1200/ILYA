@@ -1,0 +1,111 @@
+<div class="container w-50 mt-5">
+
+    <div class="row" *ngIf="pageFlag===0"><!-- row 1 -->
+      <div class="col-sm">
+        <h2>Blank Page</h2>
+      </div><!--.col-->
+    </div><!--.row 1-->
+
+
+
+  <div class="row" *ngIf="pageFlag===1"><!-- row 2 -->
+    <div class="col-sm">
+      <div class="card text-center">
+        <div class="card-header">
+           League App
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Create Team</h5>
+          
+          <form>
+            <div class="form-group">
+              <label for="teamName">Team Name</label>
+              <input [(ngModel)]="pg1teamName" type="text" class="form-control" id="teamName" name="teamName">
+              <span  style="color:red">{{pg1Err}}</span>
+            </div>
+          </form>
+
+
+          <button class="btn btn-primary m-2" (click)="pg1AddTeam()">Add Team</button>
+          <button class="btn btn-secondary m-2" [disabled]="pg1DoneButtonDisabled" (click)="pg1DoneButton()">Done</button>
+          <button class="btn btn-secondary m-2" (click)="pg1Exit()">Exit</button>
+
+        </div>
+
+      </div>
+    </div><!--.col-->
+  </div><!--.row 2-->
+
+  <!---->
+
+  <div class="row" *ngIf="pageFlag===2"><!-- row 3 -->
+    <div class="col-sm">
+      <div class="card text-center">
+        <div class="card-header">
+           League App
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Add Players</h5>
+          
+          <form>
+            <div class="form-group">
+              <label for="playerNumber">Player Number</label>
+              <input [(ngModel)]="pg2playerNumber" type="number" min="1" max="20" class="form-control" id="playerNumber" name="playerNumber" placeholder="In range 1 to 20">
+            </div>
+
+            <div class="form-group">
+              <label for="playerName">Player Name</label>
+              <input [(ngModel)]="pg2playerName" type="text" class="form-control" id="playerName" name="playerName">
+            </div>
+
+            <div class="form-group">
+              <label for="playerName">Player Age</label>
+              <input [(ngModel)]="pg2playerAge" type="number" min="18" max="30" class="form-control" id="playerName" name="playerName" placeholder="In range 18 to 30">
+            </div>
+
+
+
+          </form>
+
+
+          <button class="btn btn-primary m-2" (click)="pg2AddPlayer()">Add Player</button>
+          <button class="btn btn-secondary m-2" [disabled]="pg2DoneButtonDisabled" (click)="pg2DoneButton()">Done</button>
+
+        </div>
+
+      </div>
+    </div><!--.col-->
+  </div><!--.row 3-->
+
+
+
+
+
+  <div class="row" *ngIf="pageFlag===3"><!-- row 4 -->
+    <div class="col-sm">
+      <div class="card text-center" *ngFor="let team of league.getTeams()">
+        <div class="card-header">
+           League App
+        </div>
+        <div class="card-body" >
+          <h5 class="card-title">Team : {{team.getName()}}</h5>
+          <ul>
+            <li *ngFor="let player of team.getPlayers()">
+              <p>Id: {{player.getNumber()}}</p>
+              <p>Name: {{player.getName()}}</p>
+              <p>Age: {{player.getAge()}}</p>
+            </li>
+
+          </ul>
+          
+
+
+        </div>
+
+      </div>
+    </div><!--.col-->
+  </div><!--.row 3-->
+
+
+
+</div><!--.container-->
